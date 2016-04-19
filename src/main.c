@@ -49,6 +49,7 @@ int start() {
     result = eglInitialize(g->display, NULL, NULL);
     assert(result != EGL_FALSE);
 
+    // off screen render? -Kuth
     static const EGLint config_kw[] = {
         EGL_RED_SIZE, 8,
         EGL_GREEN_SIZE, 8,
